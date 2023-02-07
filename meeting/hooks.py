@@ -102,6 +102,12 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+    "User": {
+        "after_insert": "meeting.api.make_orientation_meeting"
+    }
+}
+
 # doc_events = {
 #	"*": {
 #		"on_update": "method",

@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-31 20:08:53.530503",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attendee",
+  "full_name",
+  "column_break_3",
+  "accepted",
+  "attended"
+ ],
+ "fields": [
+  {
+   "fieldname": "attendee",
+   "fieldtype": "Link",
+   "label": "Attendee",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "accepted",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Invitation Accepted?"
+  },
+  {
+   "default": "0",
+   "fieldname": "attended",
+   "fieldtype": "Check",
+   "label": "Attended?"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-31 20:09:18.944389",
+ "modified_by": "Administrator",
+ "module": "Jeta Meeting App Module",
+ "name": "Meeting Attendee",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
